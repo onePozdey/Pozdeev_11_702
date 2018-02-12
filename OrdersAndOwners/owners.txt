@@ -1,0 +1,16 @@
+0 John Smith 45 London
+1 Mike Collins 23 New-York
+2 Grisha Antonov 9 Moscow
+3 Chui Dui 61 Tokyo
+4 Jessie Pinkman 25 Albuquerque
+5 Rick Hill 30 Liverpool
+6 Walter White 52 Albuquerque
+7 Laura Williams 43 London
+8 Heinrich Swartz 32 Berlin
+9 Daniil Subbotin 18 Moscow
+10 Artem Prokazov 18 Moscow
+11 Iba Manuelle 15 Madrid
+12 Ash Middleton 25 New-York
+13 James Price 61 London
+14 Yri Makarov 43 Moscow
+15 Magomed Djangidze 23 Germany
