@@ -6,6 +6,7 @@ public class Main {
 
     public static final int AMOUNT_OF_ELEMENTS = (int)(Math.random() * (9900 + 100));
     public static final int MIN_RUN = 32;
+    public static int amountOfIterations = 0;
 
     public static void insertionSort(int[] array) {
         int temp = 0;
@@ -18,8 +19,10 @@ public class Main {
                 while ((j > 0) && (temp < array[j - 1])) {
                     array[j] = array[j - 1];
                     j--;
+                    amountOfIterations++;
                 }
                 array[j] = temp;
+                amountOfIterations++;
             }
         }
     }
@@ -29,10 +32,14 @@ public class Main {
         int rightLength = end - leftLength;
         int left[] = new int[leftLength];
         int right[] = new int[rightLength];
-        for (int i = 0; i < leftLength; i++)
+        for (int i = 0; i < leftLength; i++) {
             left[i] = array[i];
-        for (int i = leftLength; i < rightLength; i++)
+            amountOfIterations++;
+        }
+        for (int i = leftLength; i < rightLength; i++) {
             right[i] = array[i];
+            amountOfIterations++;
+        }
 
         int i = 0;
         int j = 0;
@@ -47,16 +54,19 @@ public class Main {
                 j++;
             }
             k++;
+            amountOfIterations++;
         }
         while (i < leftLength) {
             array[k] = left[i];
             k++;
             i++;
+            amountOfIterations++;
         }
         while (j < rightLength) {
             array[k] = right[j];
             k++;
             j++;
+            amountOfIterations++;
         }
     }
 
@@ -86,5 +96,6 @@ public class Main {
             System.out.println(array[i]);
         }
         System.out.println("Time spent: " + timeDifference);
+        System.out.println("Itarations done: " + amountOfIterations);
     }
 }
