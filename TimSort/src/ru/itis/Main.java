@@ -22,7 +22,7 @@ public class Main {
                     amountOfIterations++;
                 }
                 array[j] = temp;
-                amountOfIterations++;
+
             }
         }
     }
